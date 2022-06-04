@@ -1,0 +1,161 @@
+/* Configurações Global */
+
+:root {
+    --white: #fafafa;
+    --blue: #00348a;
+    --blue-light: #0bbbd6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    text-decoration: none;
+}
+
+/* Configuração Header */
+
+header{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    box-shadow: 0px 2px 4px 2px rgba(0,0,0,0.5);
+    background-color: var(--white);
+}
+
+header a h1 {
+    color: var(--blue);
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+/* Configurações Container */
+
+.container {
+    width: 100%;
+    height: 78vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    background: linear-gradient(to right, #ddd, #eee, #ddd);
+}
+
+/* Configurações do Form */
+
+.container form {
+    background: var(--blue-light);
+
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 1.5rem;
+    margin-top: 2%;
+    border-radius: 0.5rem;
+}
+
+.container form div {
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container form input {
+    border: 0;
+    outline: 0;
+    margin: 2% 0px;
+    padding: 3px;
+    font-size: 1.2rem;
+    font-weight: 200;
+    text-align: center;
+    border-radius: 0.2rem;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.1);
+}
+
+.container form input:focus {
+    box-shadow: inset 1px 2px 4px 2px rgba(0,0,0,0.1);
+}
+
+.container form button {
+    cursor: pointer;
+    margin-top: 3%;
+    border: 0;
+    outline: 0;
+    width: 50%;
+    align-self: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    background: var(--blue);
+    color: var(--white);
+    transition: 0.3s ease-in-out;
+}
+
+.container form button:hover {
+    color: var(--blue);
+    background: var(--white);
+}
+
+/* Configurações do Section */
+
+.container .result-box {
+    margin-top: 2%;
+    background: var(--white);
+    width: 40%;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+    color: #00348a;
+}
+
+.container .result-box h2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2% 0%;
+}
+
+.container .result-box span {
+font-size: 1.3rem;
+font-weight: 300;
+}
+
+/* Configuração do Botão "Jogar de novo" */
+
+.container #btnRestart {
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: var(--white);
+    color: var(--blue);
+    padding: 1rem;
+    margin-top: 1%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.3);
+    transition: 0.2s ease-in-out;
+
+    display: none;
+}
+
+.container #btnRestart:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    box-shadow: inset 0px 0px 4px 0px rgba(0,0,0,0.5);
+}
+
+footer p {
+    color: #00348a;
+    font-size: 1rem;
+    font-weight: 300;
+}

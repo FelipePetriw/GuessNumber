@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessNumber</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="./JS/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Poppins:wght@600 & family= Roboto+Flex:opsz,wght@8..144.200;8..144.400;8..144.600 & display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <a href="#"><h1>GuessNumber</h1></a>
+    </header>
+
+    <main class="container">
+        <form id="form">
+            <div for="kick">Digite um número<br> (0 - 20)</div>
+            <input type="number" id="kick" max="20" placeholder="0">
+
+            <button type="submit">Jogar!</button>
+        </form>
+        
+        <section class="result-box" id="result">
+            <h2 id="status">Adivinhe o numero sorteado!</h2>
+            <span id="attempt">Tentativas: 0</span>
+        </section>
+
+        <butoon id="btnRestart" onclick="restart()">Jogar de novo!</butoon>
+
+    </main>
+    <footer>
+        <p>GuessNumber, 2022 &copy;</p>
+    </footer>
+</body>
+
+</html>
